@@ -114,7 +114,7 @@ Replaced words are highlighted in the live preview section, making it easier for
   
 ## Hosting
 
-The app is hosted live at: [Live Demo](https://your-app-hosting-link.com) (Replace with actual hosting link)
+The app is hosted live at: [Live Demo]((https://text-analyzer-black.vercel.app/)) 
 
 ## How to Contribute
 
