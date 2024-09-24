@@ -1,70 +1,137 @@
-# Getting Started with Create React App
+# Text Analyzer - React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The **Text Analyzer** is a simple and powerful React web application that allows users to analyze the content of any text they input. It provides real-time statistics such as the number of unique words and character count, along with a search-and-replace feature. The app also includes undo, redo, and reset functionalities to manage text modifications effectively.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Real-Time Word and Character Analysis**: The app counts the unique words and characters (excluding spaces and punctuation) from the user's input text.
+- **Search and Replace**: Users can search for specific words and replace them with new terms, with real-time highlighting of replaced words.
+- **Undo and Redo Functionality**: Users can undo or redo changes to the text.
+- **Reset**: Clear all text and reset the application to its initial state.
+- **Live Preview**: The app shows the updated text with highlighted changes in real time.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React.js**: For building the user interface.
+- **CSS**: For styling the app.
+- **HTML**: For basic structure and layout.
+- **JavaScript**: For implementing functionality and features.
 
-### `npm test`
+## How to Run the Project Locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get a local copy of the project up and running on your machine, follow these steps.
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You need to have the following installed on your system:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Node.js](https://nodejs.org/en/download/)
+- [Git](https://git-scm.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. **Clone the repository:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   Open your terminal and run the following command to clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/yourusername/text-analyzer.git
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Navigate to the project directory:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   cd text-analyzer
+   ```
 
-## Learn More
+3. **Install dependencies:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   Install the required packages by running the following command:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm install
+   ```
 
-### Code Splitting
+4. **Start the application:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   After installing the dependencies, start the React development server by running:
 
-### Analyzing the Bundle Size
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   The app will open automatically in your default browser at `http://localhost:3000`.
 
-### Making a Progressive Web App
+### File Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+.
+├── public
+│   ├── index.html
+│   └── ...
+├── src
+│   ├── components
+│   ├── App.js
+│   ├── index.css
+│   ├── index.js
+│   └── ...
+├── README.md
+├── package.json
+└── ...
+```
 
-### Advanced Configuration
+## Features Overview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 1. **Text Analysis**
 
-### Deployment
+Once the user starts typing in the text area, the application dynamically counts:
+- **Unique Words**: Number of distinct words, case-insensitive.
+- **Character Count**: Number of characters, excluding spaces and punctuation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 2. **Search and Replace**
 
-### `npm run build` fails to minify
+Users can enter a search term and a replace term in the respective input fields. When the **Replace All** button is clicked, all occurrences of the search term are replaced with the replace term, and the replaced words are highlighted.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 3. **Undo and Redo**
+
+- The **Undo** button reverts the last text change.
+- The **Redo** button reapplies the reverted changes.
+
+### 4. **Reset**
+
+- The **Reset** button clears the text input field, search term, replace term, and resets the application.
+
+### 5. **Live Preview with Highlighting**
+
+Replaced words are highlighted in the live preview section, making it easier for users to track changes.
+
+## Bonus Features
+
+- **Live Highlighting**: All replaced terms are highlighted using `<mark>` tags, allowing for clear visualization of the changes made.
+- **Keyboard Accessibility**: The app supports keyboard shortcuts for undo (Ctrl + Z) and redo (Ctrl + Y).
+  
+## Hosting
+
+The app is hosted live at: [Live Demo](https://your-app-hosting-link.com) (Replace with actual hosting link)
+
+## How to Contribute
+
+If you would like to contribute to the project:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix (`git checkout -b feature-name`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push your branch (`git push origin feature-name`).
+5. Open a pull request and describe your changes.
+
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out to me:
+
+- **Name**: Shalini Vaggu
+- **Email**: [your-email@example.com](mailto:your-vaggushalini@gmail.com)
+- **GitHub**: [https://github.com/yourusername](https://github.com/shalinivaggu)
+```
