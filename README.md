@@ -23,65 +23,6 @@ The **Text Analyzer** is a simple and powerful React web application that allows
 
 To get a local copy of the project up and running on your machine, follow these steps.
 
-### Prerequisites
-
-You need to have the following installed on your system:
-
-- [Node.js](https://nodejs.org/en/download/)
-- [Git](https://git-scm.com/)
-
-### Installation
-
-1. **Clone the repository:**
-
-   Open your terminal and run the following command to clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/text-analyzer.git
-   ```
-
-2. **Navigate to the project directory:**
-
-   ```bash
-   cd text-analyzer
-   ```
-
-3. **Install dependencies:**
-
-   Install the required packages by running the following command:
-
-   ```bash
-   npm install
-   ```
-
-4. **Start the application:**
-
-   After installing the dependencies, start the React development server by running:
-
-   ```bash
-   npm start
-   ```
-
-   The app will open automatically in your default browser at `http://localhost:3000`.
-
-### File Structure
-
-```bash
-.
-├── public
-│   ├── index.html
-│   └── ...
-├── src
-│   ├── components
-│   ├── App.js
-│   ├── index.css
-│   ├── index.js
-│   └── ...
-├── README.md
-├── package.json
-└── ...
-```
-
 ## Features Overview
 
 ### 1. **Text Analysis**
